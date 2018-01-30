@@ -7,7 +7,7 @@ struct Node {
 	Node(const int d) { data = d; }
 };
 
-Node *insert(Node *head, int data) {
+Node *insert (Node *head, int data) {
 	Node *front = head;
 	while (true) {
 		if (!front->next)
@@ -18,7 +18,7 @@ Node *insert(Node *head, int data) {
 	return head;
 }
 
-Node *insert_nth(Node *head, int data, int pos) {
+Node *insert_nth (Node *head, int data, int pos) {
 	Node *node = new Node(data);
 	if (!head) {
 		return node;
@@ -41,7 +41,7 @@ Node *insert_nth(Node *head, int data, int pos) {
 	return head;
 }
 
-void print_list(Node *head) {
+void print_list (Node *head) {
 	while (true) {
 		if (!head)
 			break;
@@ -52,7 +52,7 @@ void print_list(Node *head) {
 	}
 }
 
-int main(int argc, const char *argv[]) {
+int main (int argc, const char *argv[]) {
 	Node *head = NULL;
 	print_list(head);
 	std::cout << "\n";
